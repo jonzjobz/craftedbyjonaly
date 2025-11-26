@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonaly Joby - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ANIMATED BACKGROUND -->
+    <div class="animated-bg">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <div class="floating-particle particle-1"></div>
+        <div class="floating-particle particle-2"></div>
+        <div class="floating-particle particle-3"></div>
+        <div class="floating-particle particle-4"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">✦</span>
+                <span>Jonaly Joby</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#journal" class="nav-link" data-section="journal">Journal</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                <li class="theme-toggle-nav">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="page-section home-section">
+        <div class="home-content">
+            <div class="hero-text fade-in-up">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Jonaly Joby</span></h1>
+                <p class="hero-subtitle">Designing with Code, Developing with Vision</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="navigateToSection('skills')">View Skills</button>
+                    <button class="btn btn-secondary" onclick="navigateToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero-image fade-in-down">
+                <div class="profile-frame">
+                    <svg viewBox="0 0 200 200" class="profile-placeholder">
+                        <defs>
+                            <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#71C9CE;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0D1B2A;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="95" fill="url(#profileGradient)"/>
+                        <circle cx="70" cy="70" r="20" fill="#F2F9FC" opacity="0.6"/>
+                        <circle cx="130" cy="80" r="15" fill="#A6E3E9" opacity="0.4"/>
+                        <path d="M100 100 Q85 130 100 150 Q115 130 100 100" fill="#FFAA5A" opacity="0.5"/>
+                        <text x="100" y="110" text-anchor="middle" font-size="14" fill="#F2F9FC" font-family="Poppins" font-weight="bold">JJ</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="page-section about-section">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-bio">
+                <h3 class="about-subtitle">Who I Am</h3>
+                <p class="about-text">I'm Jonaly Joby, a passionate web designer and developer dedicated to creating beautiful, functional digital experiences. With a focus on clean code and innovative design, I bridge the gap between aesthetics and functionality.</p>
+                <p class="about-text highlight-text">Currently studying at <strong>Fr. Conceicao Rodrigues College of Engineering.</strong></p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card-glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26H22L17.05 12.83L19.18 19.09L12 14.41L4.82 19.09L6.95 12.83L2 8.26H8.91L12 2Z"></path>
+                        </svg>
+                    </div>
+                    <h4>What I Do</h4>
+                    <p>I design and develop responsive web applications using modern technologies, focusing on user experience and visual elegance.</p>
+                </div>
+                <div class="about-card card-glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                        </svg>
+                    </div>
+                    <h4>My Passion</h4>
+                    <p>Creating seamless user interfaces that blend aesthetics with functionality, solving complex problems through elegant design.</p>
+                </div>
+                <div class="about-card card-glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h4>Continuous Learning</h4>
+                    <p>Always exploring new technologies and design trends to stay at the forefront of web development innovation.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3 class="timeline-title">My Journey</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <h4>Education</h4>
+                            <p><strong>Fr. Conceicao Rodrigues College of Engineering</strong></p>
+                            <p class="timeline-date">Ongoing</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <h4>Web Design Journey</h4>
+                            <p>Started exploring design and development with passion for creating beautiful web experiences.</p>
+                            <p class="timeline-date">2020 - Present</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card-glass">
+                            <h4>Interests</h4>
+                            <p>UI/UX Design, Modern Web Technologies, Digital Innovation, Creative Problem Solving</p>
+                            <p class="timeline-date">Current Focus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="page-section skills-section">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="skills-content">
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">Other</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">C</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNAL SECTION -->
+    <section id="journal" class="page-section journal-section">
+        <div class="section-header">
+            <h2 class="section-title">Journal</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="journal-content">
+            <div class="journal-grid">
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Achievement</div>
+                    <div class="card-icon-large">🏆</div>
+                    <h3>Best UI Design Award</h3>
+                    <p>Recognized for exceptional design work in college design competition, showcasing innovative UI/UX principles.</p>
+                    <p class="card-meta">2024</p>
+                </div>
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Certification</div>
+                    <div class="card-icon-large">📜</div>
+                    <h3>Web Design Certification</h3>
+                    <p>Completed advanced certification in responsive web design and modern CSS techniques from recognized institution.</p>
+                    <p class="card-meta">2024</p>
+                </div>
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Experience</div>
+                    <div class="card-icon-large">💼</div>
+                    <h3>Freelance Designer</h3>
+                    <p>Worked with multiple clients to create custom web solutions, delivering projects on time with exceptional quality.</p>
+                    <p class="card-meta">2023 - Present</p>
+                </div>
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Project</div>
+                    <div class="card-icon-large">🎨</div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Designed and developed a complete e-commerce platform with modern UI, responsive design, and smooth animations.</p>
+                    <p class="card-meta">2024</p>
+                </div>
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Event</div>
+                    <div class="card-icon-large">🎯</div>
+                    <h3>Hackathon Participation</h3>
+                    <p>Participated in 48-hour hackathon, created innovative solution combining design and development skills.</p>
+                    <p class="card-meta">2024</p>
+                </div>
+                <div class="journal-card card-glass">
+                    <div class="card-badge">Experience</div>
+                    <div class="card-icon-large">📚</div>
+                    <h3>Tech Workshop Host</h3>
+                    <p>Conducted workshops for students on modern web design practices, sharing knowledge and inspiring new designers.</p>
+                    <p class="card-meta">Ongoing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="page-section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form card-glass">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-card card-glass">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://gmail.com" class="social-link" title="Gmail">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com" class="social-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.047-8.842 0-9.769h3.554v1.383c.43-.664 1.199-1.61 2.920-1.61 2.135 0 3.753 1.395 3.753 4.402v5.594zM5.337 8.855c-1.144 0-1.915-.758-1.915-1.708 0-.955.77-1.708 1.963-1.708 1.192 0 1.915.753 1.938 1.708 0 .95-.746 1.708-1.986 1.708zm1.581 11.597H3.772V9.539h3.146v10.913zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" title="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card card-glass">
+                    <h3>Quick Info</h3>
+                    <p>📧 Email: <strong>jonaly.joby@example.com</strong></p>
+                    <p>🎓 Education: <strong>Fr. Conceicao Rodrigues College of Engineering</strong></p>
+                    <p>💼 Available for: Freelance projects, internships, and collaborations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Jonaly Joby | All Rights Reserved</p>
+            <p>Designed & Developed with <span class="heart">💙</span> by Jonaly Joby</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
